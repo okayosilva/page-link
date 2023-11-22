@@ -25,16 +25,32 @@ export const Card = ({ item }) => {
       gsap.killTweensOf('#cardButton')
     }
   }, [])
+
+  const defaultButton =
+    'translate-x-[-700px] h-[120px] w-[100px] border border-neutral-900 bg-stone-50 rounded drop-shadow-md flex justify-center items-center hover:scale-125'
+
   function iconSelected(item) {
     switch (item.name) {
       case 'GitHub':
-        return <GithubLogo size={48} />
+        return (
+          <button id="cardButton" className={`${defaultButton} `}>
+            <GithubLogo size={48} />
+          </button>
+        )
 
       case 'Discord':
-        return <DiscordLogo size={48} />
+        return (
+          <button id="cardButton" className={`${defaultButton} `}>
+            <DiscordLogo size={48} />
+          </button>
+        )
 
       case 'Medium':
-        return <MediumLogo size={48} />
+        return (
+          <button id="cardButton" className={`${defaultButton} `}>
+            <MediumLogo size={48} />
+          </button>
+        )
 
       case 'Linkedin':
         return <LinkedinLogo size={48} />
@@ -56,12 +72,5 @@ export const Card = ({ item }) => {
     }
   }
 
-  return (
-    <button
-      id="cardButton"
-      className="translate-x-[-700px] h-[120px] w-[100px] border border-neutral-900 bg-stone-50 rounded drop-shadow-md flex justify-center items-center"
-    >
-      {iconSelected(item)}
-    </button>
-  )
+  return <>{iconSelected(item)}</>
 }
