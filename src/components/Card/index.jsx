@@ -9,10 +9,23 @@ import {
   WhatsappLogo,
   YoutubeLogo,
 } from '@phosphor-icons/react'
+import { gsap } from 'gsap'
+import { useLayoutEffect } from 'react'
 
 export const Card = ({ item }) => {
+  useLayoutEffect(() => {
+    gsap.to('#cardButton', {
+      x: 0,
+      delay: 2,
+      duration: 1,
+      rotate: 360,
+    })
+
+    return () => {
+      gsap.killTweensOf('#cardButton')
+    }
+  }, [])
   function iconSelected(item) {
-    console.log(item.name)
     switch (item.name) {
       case 'GitHub':
         return <GithubLogo size={48} />
@@ -44,7 +57,10 @@ export const Card = ({ item }) => {
   }
 
   return (
-    <button className=" h-[100px] w-[100px] border border-neutral-900 rounded drop-shadow-md flex justify-center items-center">
+    <button
+      id="cardButton"
+      className="translate-x-[-700px] h-[120px] w-[100px] border border-neutral-900 bg-stone-50 rounded drop-shadow-md flex justify-center items-center"
+    >
       {iconSelected(item)}
     </button>
   )

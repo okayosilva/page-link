@@ -1,6 +1,7 @@
 import React from 'react'
 import dataCard from '../../data/dataCard'
 import { Card } from '../../components/Card'
+import { ButtonCV } from '../../components/ButtonCV'
 
 const Skeleton = () => {
   return (
@@ -53,12 +54,14 @@ const Skeleton = () => {
 
 export const ListCard = () => {
   return (
-    <div className="mt-16 flex flex-wrap gap-4 w-full">
+    <div className="mt-[72px] flex flex-wrap gap-5 w-full max-[320px]:justify-center">
       {dataCard.length === 0 ? (
         <Skeleton />
       ) : (
         dataCard.map((item) => <Card key={item.id} item={item} />)
       )}
+
+      <ButtonCV />
     </div>
   )
 }
