@@ -27,7 +27,7 @@ const dataCard = [
   {
     id: 6,
     name: 'Email',
-    link: '',
+    link: 'mailto:kayo16silva',
   },
   {
     id: 7,
