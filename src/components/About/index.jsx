@@ -8,8 +8,8 @@ export const About = () => {
       x: 0,
       opacity: 1,
       display: 'flex',
-      delay: 3,
-      duration: 3,
+      delay: 2,
+      duration: 2,
     })
 
     return () => {

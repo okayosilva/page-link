@@ -27,22 +27,22 @@ const dataCard = [
   {
     id: 6,
     name: 'Email',
-    link: 'mailto:kayo16silva',
+    link: 'mailto:kayo16silva@gmail.com',
   },
   {
     id: 7,
     name: 'Whatsapp',
-    link: '',
+    link: 'https://wa.me/5514998652138?text=Ol%C3%A1%2C%20tudo%20bem%3F',
   },
   {
     id: 8,
     name: 'Youtube',
-    link: '',
+    link: 'https://www.youtube.com/channel/UCee3hpreLTR8nxafMnZwNJg',
   },
   {
     id: 9,
     name: 'Twitch',
-    link: '',
+    link: 'https://www.twitch.tv/okayosilva',
   },
 ]
 

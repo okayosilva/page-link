@@ -17,9 +17,10 @@ export const Card = ({ item }) => {
   useLayoutEffect(() => {
     gsap.to('#cardButton', {
       x: 0,
-      delay: 2,
-      duration: 2,
+      delay: 1,
+      duration: 1.5,
       rotate: 360,
+      opacity: 1,
     })
 
     return () => {
@@ -28,7 +29,7 @@ export const Card = ({ item }) => {
   }, [])
 
   const defaultButton =
-    'translate-x-[-400px] md:translate-x-[-780px] h-[120px] w-[100px] border border-neutral-900 bg-stone-50 rounded drop-shadow-md flex justify-center items-center transition-all'
+    'opacity-0 translate-x-[-300px] md:translate-x-[-300px] h-[120px] w-[100px] border border-neutral-900 bg-stone-50 rounded drop-shadow-md flex justify-center items-center transition-all'
 
   function iconSelected(item) {
     switch (item.name) {
