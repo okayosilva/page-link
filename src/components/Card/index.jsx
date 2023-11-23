@@ -17,7 +17,7 @@ export const Card = ({ item }) => {
     gsap.to('#cardButton', {
       x: 0,
       delay: 2,
-      duration: 1,
+      duration: 2.5,
       rotate: 360,
     })
 
@@ -27,7 +27,7 @@ export const Card = ({ item }) => {
   }, [])
 
   const defaultButton =
-    'translate-x-[-700px] h-[120px] w-[100px] border border-neutral-900 bg-stone-50 rounded drop-shadow-md flex justify-center items-center transition-all'
+    'translate-x-[-400px] h-[120px] w-[100px] border border-neutral-900 bg-stone-50 rounded drop-shadow-md flex justify-center items-center transition-all'
 
   function iconSelected(item) {
     switch (item.name) {

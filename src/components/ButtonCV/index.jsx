@@ -9,7 +9,7 @@ export const ButtonCV = () => {
       x: 0,
       opacity: 1,
       delay: 3,
-      duration: 1,
+      duration: 2,
     })
 
     return () => {
