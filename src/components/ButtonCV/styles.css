@@ -1,0 +1,4 @@
+#buttonCv:hover {
+  transform: translateY(-5px) !important;
+  transition-duration: 300ms;
+}

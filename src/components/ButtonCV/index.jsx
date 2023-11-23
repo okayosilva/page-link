@@ -1,10 +1,10 @@
 import { useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
 import { DownloadSimple } from '@phosphor-icons/react'
+import './styles.css'
 
 export const ButtonCV = () => {
   useLayoutEffect(() => {
-    // gsap.registerPlugin()
     gsap.to('#buttonCv', {
       x: 0,
       opacity: 1,

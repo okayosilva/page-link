@@ -2,47 +2,47 @@ const dataCard = [
   {
     id: 1,
     name: 'GitHub',
-    links: 'https://github.com/KayoSilva19',
+    link: 'https://github.com/KayoSilva19',
   },
   {
     id: 2,
     name: 'Discord',
-    links: 'https://discord.gg/faAjWEuSxc',
+    link: 'https://discord.gg/feCgeKt3t7',
   },
   {
     id: 3,
     name: 'Medium',
-    links: '',
+    link: 'https://medium.com/@kayohenrique16silva',
   },
   {
     id: 4,
     name: 'Linkedin',
-    links: 'https://www.linkedin.com/in/kayohenriquesilva/',
+    link: 'https://www.linkedin.com/in/kayohenriquesilva/',
   },
   {
     id: 5,
     name: 'Instagram',
-    links: 'https://www.instagram.com/okayosilva/',
+    link: 'https://www.instagram.com/okayosilva/',
   },
   {
     id: 6,
     name: 'Email',
-    links: '',
+    link: '',
   },
   {
     id: 7,
     name: 'Whatsapp',
-    links: '',
+    link: '',
   },
   {
     id: 8,
     name: 'Youtube',
-    links: '',
+    link: '',
   },
   {
     id: 9,
     name: 'Twitch',
-    links: '',
+    link: '',
   },
 ]
 

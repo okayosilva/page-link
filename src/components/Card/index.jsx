@@ -11,13 +11,14 @@ import {
 } from '@phosphor-icons/react'
 import { gsap } from 'gsap'
 import { useLayoutEffect } from 'react'
+import './styles.css'
 
 export const Card = ({ item }) => {
   useLayoutEffect(() => {
     gsap.to('#cardButton', {
       x: 0,
       delay: 2,
-      duration: 2.5,
+      duration: 2,
       rotate: 360,
     })
 
@@ -27,98 +28,125 @@ export const Card = ({ item }) => {
   }, [])
 
   const defaultButton =
-    'translate-x-[-400px] h-[120px] w-[100px] border border-neutral-900 bg-stone-50 rounded drop-shadow-md flex justify-center items-center transition-all'
+    'translate-x-[-400px] md:translate-x-[-780px] h-[120px] w-[100px] border border-neutral-900 bg-stone-50 rounded drop-shadow-md flex justify-center items-center transition-all'
 
   function iconSelected(item) {
     switch (item.name) {
       case 'GitHub':
         return (
-          <button
+          <a
+            href={item.link}
             id="cardButton"
+            target="_blank"
             className={`${defaultButton} hover:bg-blue-950 hover:text-neutral-50`}
+            rel="noreferrer"
           >
             <GithubLogo size={48} />
-          </button>
+          </a>
         )
 
       case 'Discord':
         return (
-          <button
+          <a
             id="cardButton"
+            target="_blank"
+            href={item.link}
             className={`${defaultButton} hover:bg-violet-500 hover:text-neutral-50`}
+            rel="noreferrer"
           >
             <DiscordLogo size={48} />
-          </button>
+          </a>
         )
 
       case 'Medium':
         return (
-          <button
+          <a
             id="cardButton"
+            target="_blank"
+            href={item.link}
             className={`${defaultButton} hover:bg-neutral-900 hover:text-neutral-50`}
+            rel="noreferrer"
           >
             <MediumLogo size={48} />
-          </button>
+          </a>
         )
 
       case 'Linkedin':
         return (
-          <button
+          <a
             id="cardButton"
+            target="_blank"
+            href={item.link}
             className={`${defaultButton} hover:bg-blue-500 hover:text-neutral-50`}
+            rel="noreferrer"
           >
             <LinkedinLogo size={48} />
-          </button>
+          </a>
         )
 
       case 'Instagram':
         return (
-          <button
+          <a
             id="cardButton"
+            target="_blank"
+            href={item.link}
             className={`${defaultButton} hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500  hover:text-neutral-50`}
+            rel="noreferrer"
           >
             <InstagramLogo size={48} />
-          </button>
+          </a>
         )
 
       case 'Email':
         return (
-          <button
+          <a
             id="cardButton"
+            target="_blank"
+            href={item.link}
             className={`${defaultButton} hover:bg-red-700 hover:text-neutral-50`}
+            rel="noreferrer"
           >
             <GoogleLogo size={48} />
-          </button>
+          </a>
         )
 
       case 'Whatsapp':
         return (
-          <button
+          <a
             id="cardButton"
+            target="_blank"
+            href={item.link}
             className={`${defaultButton} hover:bg-green-500 hover:text-neutral-50`}
+            rel="noreferrer"
           >
             <WhatsappLogo size={48} />
-          </button>
+          </a>
         )
 
       case 'Youtube':
         return (
-          <button
+          <a
             id="cardButton"
+            target="_blank"
+            href={item.link}
             className={`${defaultButton} hover:bg-red-500 hover:text-neutral-50`}
+            rel="noreferrer"
           >
             <YoutubeLogo size={48} />
-          </button>
+          </a>
         )
 
       case 'Twitch':
         return (
-          <button
+          <a
             id="cardButton"
+            target="_blank"
+            href={item.link}
             className={`${defaultButton} hover:bg-purple-500 hover:text-neutral-50`}
+            rel="noreferrer"
           >
             <TwitchLogo size={48} />
-          </button>
+          </a>
         )
     }
   }
