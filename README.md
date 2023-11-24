@@ -38,3 +38,5 @@ $ npm install
 ```
 $ npm run dev
 ```
+## Project link running:
+<a target="_blank" href="https://page-link-omega.vercel.app/">Project Link</a>
