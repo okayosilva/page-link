@@ -35,7 +35,7 @@ export const Header = () => {
       <div id="text" className="flex flex-col gap-1 text-zinc-950 opacity-0">
         <h2 className="text-md md:text-[18px]">
           <span className="font-semibold text-blue-700">Developer: </span>
-          Full-Stack.
+          Front-end.
         </h2>
         <p className="font-sans md:text-[22px]	">
           Olá, sou o Kayo. Aqui, você encontrará diversas formas de entrar em
