@@ -28,7 +28,7 @@ export const Header = () => {
       >
         <img
           className="rounded-full drop-shadow-lg border border-zinc-300    "
-          src="https://github.com/KayoSilva19.png"
+          src="https://github.com/okayosilva.png"
           alt="Minha fotoo"
         />
       </figure>
