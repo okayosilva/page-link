@@ -2,7 +2,7 @@ const dataCard = [
   {
     id: 1,
     name: 'GitHub',
-    link: 'https://github.com/KayoSilva19',
+    link: 'https://github.com/okayosilva',
   },
   {
     id: 2,
